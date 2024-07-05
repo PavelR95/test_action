@@ -34,3 +34,12 @@ jobs:
     - name: Test with flake8
       run: |
         flake8 app
+    - name: Test with mypy
+      run: |
+        mypy app
+    - name: Test with black
+      run: |
+        black --check --diff app
+    - name: Test with isort
+      run: |
+        isort --check-only --diff --profile black app
