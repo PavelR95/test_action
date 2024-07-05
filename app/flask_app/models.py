@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Dict
 
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import DATETIME, Boolean, ForeignKey, Integer, String, UniqueConstraint
